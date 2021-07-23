@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  @include mq {
+    flex-direction: row;
+  }
+}
+
+main {
+  padding: {
+    top: 3em;
+    right: 2em;
+    left: 2em;
+  }
+  @include mq {
+    padding-right: 10em;
+    padding-left: 5em;
+    padding-top: 1em;
+  }
+}
+
+button {
+  border: 0.1em solid transparent;
+  background-color: $secondary-color;
+  border-radius: 2em;
+  font-size: 0.75em;
+  transition: .5s;
+  padding: {
+    left: 1em;
+    right: 1em;
+    top: .5em;
+    bottom: .5em;
+  }
+
+  &:active, &:hover, &:focus {
+    border: 0.1em $accent-color solid;
+  }
+}
+
+#hello {
+  height: 100vh;
+  width: auto;
+  h1 {
+    font-size: $head-size;
+    font-weight: 500;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+
+#down {
+  margin-top: 2em;
+  justify-self: center;
+  text-align: center;
+  font-size: .75em;
+  display: none;
+  @include mq {
+    display: block;
+  }
+}
+

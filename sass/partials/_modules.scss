@@ -1,0 +1,96 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+address {
+  background-color: $accent-color;
+  text-align: right;
+  width: 90vw;
+  margin-top: .5em;
+  @include mq {
+    margin: 0;
+    height: 70vh;
+    width: auto;
+    right: 0;
+    transform: translate(1em, -1.5em);
+  }
+  border-radius: 1.5em;
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+
+#icons {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: .5em;
+  @include mq {
+    flex-direction: column;
+    margin: {
+      top: 4em;
+      right: 1.5em;
+      left: .5em;
+    }
+  }
+
+  * {
+    @include mq {
+      margin-bottom: 1em;
+      margin-right: 0;
+    }
+    cursor: pointer;;
+    margin-right: 1em;
+    color: $primary-color;
+    font-size: 1.2em;
+    transition: .5s;
+    justify-self: flex-end;
+
+    &:active, &:hover, &:focus {
+      transform: scale(1.2);
+    }
+  }
+}
+
+//=======================================
+// MENU
+//======================================
+
+.fa-bars {
+  cursor: pointer;
+  color: $primary-color;
+  z-index: 0;
+  justify-self: flex-start;
+  margin-left: 1em;
+  @include mq {
+    position: fixed;
+    z-index: 1;
+    margin-right: 0;
+    margin-left: 0.95em;
+    margin-top: .9em;
+  }
+}
+
+.fa-circle {
+  position: fixed;
+  @include mq {
+
+    margin: .2em;
+  }
+
+  z-index: 0;
+  color: $accent-color;
+  font-size: 2em;
+  transition: 1s;
+}
+
+.fa-circle.open {
+  transform: scale(50);
+}
+
+.fa-times {
+  display: none;
+}
