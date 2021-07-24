@@ -13,11 +13,30 @@ body {
   flex-direction: column;
   @include mq {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   overflow-x: hidden;
 }
 
 main {
+  @include get-padding;
+  width: 100vw;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+article {
+  text-align: justify;
+}
+
+p {
+  line-height: 1.5;
 }
 
 button {
@@ -29,12 +48,11 @@ button {
   padding: {
     left: 1em;
     right: 1em;
-    top: .5em;
-    bottom: .5em;
+    top: .7em;
+    bottom: .7em;
   }
 
   &:active, &:hover, &:focus {
-    //border: 0.1em $accent-color solid;
     background-color: $accent-color;
   }
 }
@@ -49,9 +67,6 @@ button {
     font-size: $head-size;
     font-weight: 500;
   }
-  p {
-    line-height: 1.5;
-  }
 }
 
 #down {
@@ -60,6 +75,7 @@ button {
   text-align: center;
   font-size: .75em;
   display: none;
+  z-index: -1;
   @include mq {
     display: block;
   }
@@ -132,7 +148,7 @@ button {
 .flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   flex-shrink: 0;
   flex-wrap: wrap;
 }
@@ -157,4 +173,30 @@ a {
 
 #down{
   position: relative;
+}
+
+.title {
+    &::before{
+      content: "";
+      width: 1em;
+      height: .1em;
+      margin-top: .5em;
+      margin-left: -.8em;
+      background: $accent-color;
+      position: absolute;
+      border-radius: 1em;
+      transform: rotate(90deg);
+    }
+}
+
+.container2 {
+  margin: 2em;
+  padding: 1em;
+  padding-top: 0;
+  border: $secondary-color .1em solid;
+  border-radius: 1.2em;
+
+  h1 {
+    font-size: 0.5em;
+  }
 }

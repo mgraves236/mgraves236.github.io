@@ -4,10 +4,10 @@
 <body>
 <?php $name = 'index';
 require_once 'php/header.php'; ?>
-<main>
+<main class="no-padding">
     <article id="hello">
         <h1>Hi, <br> I'm Magda</h1>
-        <p>I’m an amateur web developer/desginer & UX designer
+        <p>I’m an amateur web developer/designer & UX designer
             based in Poland who is excited to start working!</p>
         <button><a href="about.php">Learn more &#8594;</a></button>
         <nav id="down">&#9660;</nav>
@@ -17,9 +17,9 @@ require_once 'php/header.php'; ?>
             <div class="container">
                 <h1>Work</h1>
                 <div class="flex-row">
-                    <button><a href="#">Web Design <br>/Developement</a></button>
-                    <button><a href="#">UX Design</a></button>
-                    <button><a href="#">Graphics</a></button>
+                    <button><a href="work.php#web">Web Design <br>/Development</a></button>
+                    <button><a href="work.php#UX">UX Design</a></button>
+                    <button><a href="ork.php#graphics">Graphics</a></button>
                 </div>
             </div>
             <div class="container" id="skills">

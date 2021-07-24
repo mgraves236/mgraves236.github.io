@@ -5,8 +5,8 @@
         <i class="fas fa-times"></i>
         <ul id="menu-list">
             <li><a href="index.php" class="<?php  echo ($name == 'index') ? 'active' : '';?>">Home</a></li>
-            <li><a href="#" class="<?php  echo ($name == 'work') ? 'active' : '';?>">Work</a></li>
-            <li><a href="#" class="<?php  echo ($name == 'about') ? 'active' : '';?>">About me</a></li>
+            <li><a href="work.php" class="<?php  echo ($name == 'work') ? 'active' : '';?>">Work</a></li>
+            <li><a href="about.php" class="<?php  echo ($name == 'about') ? 'active' : '';?>">About me</a></li>
         </ul>
     </nav>
     <address>
