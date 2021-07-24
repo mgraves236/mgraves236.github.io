@@ -14,19 +14,10 @@ body {
   @include mq {
     flex-direction: row;
   }
+  overflow-x: hidden;
 }
 
 main {
-  padding: {
-    top: 3em;
-    right: 2em;
-    left: 2em;
-  }
-  @include mq {
-    padding-right: 10em;
-    padding-left: 5em;
-    padding-top: 1em;
-  }
 }
 
 button {
@@ -43,12 +34,16 @@ button {
   }
 
   &:active, &:hover, &:focus {
-    border: 0.1em $accent-color solid;
+    //border: 0.1em $accent-color solid;
+    background-color: $accent-color;
   }
 }
 
 #hello {
-  height: 100vh;
+  @include get-padding;
+  @include mq {
+    height: 100vh;
+  }
   width: auto;
   h1 {
     font-size: $head-size;
@@ -70,3 +65,88 @@ button {
   }
 }
 
+#more {
+  background-color: $secondary-color;
+  width: 100vw;
+  height: 150vw;
+  @include mq {
+    height: 100vh;
+  }
+  padding: 0;
+}
+
+.padding {
+  @include get-padding;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-right: 1em;
+}
+
+.container {
+  background-color: $primary-color;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 1em;
+
+  button {
+    margin: 1em;
+    font-size: .5em;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 0;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1.5em;
+      height: .1em;
+      background: $accent-color;
+      //position: absolute;
+      margin-left: 45%;
+      margin-top: .5em;
+      border-radius: 1em;
+    }
+
+  }
+
+  img {
+    height: 2em;
+    margin: .5em;
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+
+#skills {
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+
+  h1 {
+    &:after {
+      margin-left: 47%;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#down{
+  position: relative;
+}

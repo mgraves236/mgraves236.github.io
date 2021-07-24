@@ -1,5 +1,19 @@
 @mixin mq {
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1500px) {
     @content;
+  }
+}
+
+@mixin get-padding {
+  padding: {
+    top: 3em;
+    right: 2em;
+    left: 2em;
+    bottom: 1em;
+  }
+  @include mq {
+    padding-right: 7em;
+    padding-left: 5em;
+    padding-top: 1em;
   }
 }
