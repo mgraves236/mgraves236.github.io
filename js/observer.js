@@ -1,9 +1,8 @@
+let $container = $('.container');
+$container = $container.add('.container2');
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        const $container = $('.container');
-
         if (entry.isIntersecting) {
-            console.log('inter');
           $container.addClass('container-animation');
             return; // if we added the class, exit the function
         }
@@ -14,3 +13,4 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(document.querySelector('.container'));
+observer.observe(document.querySelector('.container2'));

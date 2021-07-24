@@ -28,6 +28,7 @@ require_once 'php/header.php'; ?>
         <div class="grid">
         </div>
     </article>
+    <div class="container" style="display: none;"></div>
 </main>
 <?php require_once 'php/footer.php'; ?>
 </body>
