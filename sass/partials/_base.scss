@@ -84,6 +84,14 @@ button {
   padding-right: 1em;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .container-animation {
+    animation-name: wipe-enter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+}
+
 .container {
   background-color: $primary-color;
   border-radius: 1em;

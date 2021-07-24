@@ -275,6 +275,14 @@ input[type="checkbox"], input[type="radio"] {
   padding: 0;
 }
 
+@keyframes wipe-enter {
+  0% {
+    transform: scale(0, 0.025);
+  }
+  50% {
+    transform: scale(1, 0.025);
+  }
+}
 /* line 1, ../sass/partials/_base.scss */
 * {
   box-sizing: border-box;
@@ -399,26 +407,34 @@ button:active, button:hover, button:focus {
   }
 }
 
-/* line 87, ../sass/partials/_base.scss */
+@media (prefers-reduced-motion: no-preference) {
+  /* line 88, ../sass/partials/_base.scss */
+  .container-animation {
+    animation-name: wipe-enter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+}
+/* line 95, ../sass/partials/_base.scss */
 .container {
   background-color: white;
   border-radius: 1em;
   margin: 1em;
   padding: 1em;
 }
-/* line 93, ../sass/partials/_base.scss */
+/* line 101, ../sass/partials/_base.scss */
 .container button {
   margin: 1em;
   font-size: .5em;
 }
-/* line 98, ../sass/partials/_base.scss */
+/* line 106, ../sass/partials/_base.scss */
 .container h1 {
   text-align: center;
   font-size: 1em;
   font-weight: 400;
   margin-top: 0;
 }
-/* line 104, ../sass/partials/_base.scss */
+/* line 112, ../sass/partials/_base.scss */
 .container h1::after {
   content: "";
   display: block;
@@ -429,13 +445,13 @@ button:active, button:hover, button:focus {
   margin-top: .5em;
   border-radius: 1em;
 }
-/* line 118, ../sass/partials/_base.scss */
+/* line 126, ../sass/partials/_base.scss */
 .container img {
   height: 2em;
   margin: .5em;
 }
 
-/* line 124, ../sass/partials/_base.scss */
+/* line 132, ../sass/partials/_base.scss */
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -444,24 +460,24 @@ button:active, button:hover, button:focus {
   flex-wrap: wrap;
 }
 
-/* line 133, ../sass/partials/_base.scss */
+/* line 141, ../sass/partials/_base.scss */
 #skills {
   align-self: flex-end;
   margin-left: auto;
   margin-right: 0;
 }
-/* line 139, ../sass/partials/_base.scss */
+/* line 147, ../sass/partials/_base.scss */
 #skills h1:after {
   margin-left: 47%;
 }
 
-/* line 145, ../sass/partials/_base.scss */
+/* line 153, ../sass/partials/_base.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 150, ../sass/partials/_base.scss */
+/* line 158, ../sass/partials/_base.scss */
 #down {
   position: relative;
 }
