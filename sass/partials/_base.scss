@@ -106,7 +106,10 @@ button > a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  @include mq {
+    justify-content: flex-start;
+  }
   padding-right: 1em;
 }
 
@@ -123,7 +126,10 @@ button > a {
   border-radius: 1em;
   margin: 1em;
   padding: 1em;
-
+  flex-grow: 1;
+  @include mq {
+    flex-grow: 0;
+  }
   button {
     margin: 1em;
     font-size: .5em;
@@ -164,9 +170,11 @@ button > a {
 
 
 #skills {
-  align-self: flex-end;
-  margin-left: auto;
-  margin-right: 0;
+  @include mq {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+  }
   width: 70%;
 
   h1 {
