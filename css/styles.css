@@ -439,7 +439,7 @@ button > a:active, button > a:hover, button > a:focus {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   padding-right: 1em;
 }
 @media only screen and (min-width: 1500px) {
@@ -450,35 +450,48 @@ button > a:active, button > a:hover, button > a:focus {
     padding-top: 1em;
   }
 }
+@media only screen and (min-width: 1500px) {
+  /* line 104, ../sass/partials/_base.scss */
+  .padding {
+    justify-content: flex-start;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
-  /* line 114, ../sass/partials/_base.scss */
+  /* line 117, ../sass/partials/_base.scss */
   .container-animation {
     animation-name: wipe-enter;
     animation-duration: 1s;
     animation-iteration-count: 1;
   }
 }
-/* line 121, ../sass/partials/_base.scss */
+/* line 124, ../sass/partials/_base.scss */
 .container {
   background-color: white;
   border-radius: 1em;
   margin: 1em;
   padding: 1em;
+  flex-grow: 1;
 }
-/* line 127, ../sass/partials/_base.scss */
+@media only screen and (min-width: 1500px) {
+  /* line 124, ../sass/partials/_base.scss */
+  .container {
+    flex-grow: 0;
+  }
+}
+/* line 133, ../sass/partials/_base.scss */
 .container button {
   margin: 1em;
   font-size: .5em;
 }
-/* line 132, ../sass/partials/_base.scss */
+/* line 138, ../sass/partials/_base.scss */
 .container h1 {
   text-align: center;
   font-size: 1em;
   font-weight: 400;
   margin-top: 0;
 }
-/* line 138, ../sass/partials/_base.scss */
+/* line 144, ../sass/partials/_base.scss */
 .container h1::after {
   content: "";
   display: block;
@@ -489,13 +502,13 @@ button > a:active, button > a:hover, button > a:focus {
   margin-top: .5em;
   border-radius: 1em;
 }
-/* line 152, ../sass/partials/_base.scss */
+/* line 158, ../sass/partials/_base.scss */
 .container img {
   height: 2em;
   margin: .5em;
 }
 
-/* line 158, ../sass/partials/_base.scss */
+/* line 164, ../sass/partials/_base.scss */
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -503,34 +516,39 @@ button > a:active, button > a:hover, button > a:focus {
   flex-wrap: wrap;
 }
 
-/* line 166, ../sass/partials/_base.scss */
+/* line 172, ../sass/partials/_base.scss */
 #skills {
-  align-self: flex-end;
-  margin-left: auto;
-  margin-right: 0;
   width: 70%;
 }
-/* line 173, ../sass/partials/_base.scss */
+@media only screen and (min-width: 1500px) {
+  /* line 172, ../sass/partials/_base.scss */
+  #skills {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+/* line 181, ../sass/partials/_base.scss */
 #skills h1:after {
   margin-left: 46%;
 }
 
-/* line 179, ../sass/partials/_base.scss */
+/* line 187, ../sass/partials/_base.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
-/* line 183, ../sass/partials/_base.scss */
+/* line 191, ../sass/partials/_base.scss */
 a:active, a:hover, a:focus {
   color: #ab97e5;
 }
 
-/* line 188, ../sass/partials/_base.scss */
+/* line 196, ../sass/partials/_base.scss */
 #down {
   position: relative;
 }
 
-/* line 193, ../sass/partials/_base.scss */
+/* line 201, ../sass/partials/_base.scss */
 .title::before {
   content: "";
   width: 1em;
@@ -543,7 +561,7 @@ a:active, a:hover, a:focus {
   transform: rotate(90deg);
 }
 
-/* line 206, ../sass/partials/_base.scss */
+/* line 214, ../sass/partials/_base.scss */
 .container2 {
   margin: 2em;
   padding: 1em;
@@ -551,16 +569,16 @@ a:active, a:hover, a:focus {
   border: #f1f1f1 0.1em solid;
   border-radius: 1.2em;
 }
-/* line 213, ../sass/partials/_base.scss */
+/* line 221, ../sass/partials/_base.scss */
 .container2 h1 {
   font-size: 0.5em;
 }
 
-/* line 218, ../sass/partials/_base.scss */
+/* line 226, ../sass/partials/_base.scss */
 article:not(#hello):not(#more) {
   font-size: 0.7em;
 }
-/* line 221, ../sass/partials/_base.scss */
+/* line 229, ../sass/partials/_base.scss */
 article:not(#hello):not(#more) p {
   line-height: 1.8em;
 }
