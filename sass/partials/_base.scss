@@ -230,3 +230,25 @@ article:not(#hello):not(#more) {
     line-height: 1.8em;
   }
 }
+
+#details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  text-align: left;
+  flex-grow: 0;
+  flex-basis: 30%;
+  h1 {
+    font-size: 1em;
+  }
+}
+
+.fa-google {
+  color: #d5d5d5;
+  display: inline-block;
+  margin-right: .7em;
+}
