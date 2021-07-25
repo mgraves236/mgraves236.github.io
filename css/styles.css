@@ -583,6 +583,32 @@ article:not(#hello):not(#more) p {
   line-height: 1.8em;
 }
 
+/* line 234, ../sass/partials/_base.scss */
+#details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* line 241, ../sass/partials/_base.scss */
+.col {
+  text-align: left;
+  flex-grow: 0;
+  flex-basis: 30%;
+}
+/* line 245, ../sass/partials/_base.scss */
+.col h1 {
+  font-size: 1em;
+}
+
+/* line 250, ../sass/partials/_base.scss */
+.fa-google {
+  color: #d5d5d5;
+  display: inline-block;
+  margin-right: .7em;
+}
+
 /* line 1, ../sass/partials/_modules.scss */
 header {
   display: flex;
