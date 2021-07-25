@@ -55,9 +55,12 @@ button {
   &:active, &:hover, &:focus {
     background-color: $accent-color;
   }
+
 }
 
-button a{
+button > a {
+  color: black;
+
   &:active, &:hover, &:focus {
     color: black;
   }
@@ -69,6 +72,7 @@ button a{
     height: 100vh;
   }
   width: auto;
+
   h1 {
     font-size: $head-size;
     font-weight: 500;
@@ -172,30 +176,31 @@ button a{
   }
 }
 
-a:not(#icons) {
+a {
   text-decoration: none;
   color: inherit;
+
   &:active, &:hover, &:focus {
     color: $accent-color;
   }
 }
 
-#down{
+#down {
   position: relative;
 }
 
 .title {
-    &::before{
-      content: "";
-      width: 1em;
-      height: .1em;
-      margin-top: .5em;
-      margin-left: -.8em;
-      background: $accent-color;
-      position: absolute;
-      border-radius: 1em;
-      transform: rotate(90deg);
-    }
+  &::before {
+    content: "";
+    width: 1em;
+    height: .1em;
+    margin-top: .5em;
+    margin-left: -.8em;
+    background: $accent-color;
+    position: absolute;
+    border-radius: 1em;
+    transform: rotate(90deg);
+  }
 }
 
 .container2 {
@@ -212,6 +217,7 @@ a:not(#icons) {
 
 article:not(#hello):not(#more) {
   font-size: 0.7em;
+
   p {
     line-height: 1.8em;
   }
