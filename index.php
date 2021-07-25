@@ -19,17 +19,18 @@ require_once 'php/header.php'; ?>
                 <div class="flex-row">
                     <button><a href="work.php#web">Web Design <br>/Development</a></button>
                     <button><a href="work.php#UX">UX Design</a></button>
-                    <button><a href="ork.php#graphics">Graphics</a></button>
+                    <button><a href="work.php#graphics">Graphics</a></button>
                 </div>
             </div>
             <div class="container" id="skills">
-                <h1>Skills</h1>
+                <h1>Skills & Tools</h1>
                 <div class="flex-row">
                     <img src="img/skills/html5.svg">
                     <img src="img/skills/css3.svg">
                     <img src="img/skills/sass.svg">
                     <img src="img/skills/js.svg">
                     <img src="img/skills/jquery.svg">
+                    <img src="img/skills/php.svg">
                     <img src="img/skills/c++.svg">
                     <img src="img/skills/ps.svg">
                     <img src="img/skills/ai.svg">

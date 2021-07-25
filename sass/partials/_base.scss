@@ -57,6 +57,12 @@ button {
   }
 }
 
+button a{
+  &:active, &:hover, &:focus {
+    color: black;
+  }
+}
+
 #hello {
   @include get-padding;
   @include mq {
@@ -86,7 +92,7 @@ button {
   width: 100vw;
   height: 150vw;
   @include mq {
-    height: 100vh;
+    height: 120vh;
   }
   padding: 0;
 }
@@ -132,7 +138,7 @@ button {
       height: .1em;
       background: $accent-color;
       //position: absolute;
-      margin-left: 45%;
+      margin-left: 46%;
       margin-top: .5em;
       border-radius: 1em;
     }
@@ -149,7 +155,6 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-shrink: 0;
   flex-wrap: wrap;
 }
 
@@ -158,10 +163,11 @@ button {
   align-self: flex-end;
   margin-left: auto;
   margin-right: 0;
+  width: 70%;
 
   h1 {
     &:after {
-      margin-left: 47%;
+      margin-left: 46%;
     }
   }
 }
@@ -169,6 +175,9 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+  &:active, &:hover, &:focus {
+    color: $accent-color;
+  }
 }
 
 #down{
@@ -198,5 +207,12 @@ a {
 
   h1 {
     font-size: 0.5em;
+  }
+}
+
+article:not(#hello):not(#more) {
+  font-size: 0.7em;
+  p {
+    line-height: 1.8em;
   }
 }

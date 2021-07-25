@@ -13,6 +13,7 @@
         <div id="icons">
             <i class="fab fa-github"></i>
             <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-behance"></i>
             <i class="fas fa-envelope"></i>
         </div>
     </address>

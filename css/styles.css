@@ -320,8 +320,8 @@ main {
 @media only screen and (min-width: 1500px) {
   /* line 21, ../sass/partials/_base.scss */
   main {
-    padding-right: 7em;
-    padding-left: 7em;
+    padding-right: 8em;
+    padding-left: 6em;
     padding-top: 1em;
   }
 }
@@ -363,7 +363,12 @@ button:active, button:hover, button:focus {
   background-color: #ab97e5;
 }
 
-/* line 60, ../sass/partials/_base.scss */
+/* line 61, ../sass/partials/_base.scss */
+button a:active, button a:hover, button a:focus {
+  color: black;
+}
+
+/* line 66, ../sass/partials/_base.scss */
 #hello {
   padding-top: 3em;
   padding-right: 2em;
@@ -372,26 +377,26 @@ button:active, button:hover, button:focus {
   width: auto;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 60, ../sass/partials/_base.scss */
+  /* line 66, ../sass/partials/_base.scss */
   #hello {
-    padding-right: 7em;
-    padding-left: 7em;
+    padding-right: 8em;
+    padding-left: 6em;
     padding-top: 1em;
   }
 }
 @media only screen and (min-width: 1500px) {
-  /* line 60, ../sass/partials/_base.scss */
+  /* line 66, ../sass/partials/_base.scss */
   #hello {
     height: 100vh;
   }
 }
-/* line 66, ../sass/partials/_base.scss */
+/* line 72, ../sass/partials/_base.scss */
 #hello h1 {
   font-size: 3em;
   font-weight: 500;
 }
 
-/* line 72, ../sass/partials/_base.scss */
+/* line 78, ../sass/partials/_base.scss */
 #down {
   margin-top: 2em;
   justify-self: center;
@@ -401,13 +406,13 @@ button:active, button:hover, button:focus {
   z-index: -1;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 72, ../sass/partials/_base.scss */
+  /* line 78, ../sass/partials/_base.scss */
   #down {
     display: block;
   }
 }
 
-/* line 84, ../sass/partials/_base.scss */
+/* line 90, ../sass/partials/_base.scss */
 #more {
   background-color: #f1f1f1;
   width: 100vw;
@@ -415,13 +420,13 @@ button:active, button:hover, button:focus {
   padding: 0;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 84, ../sass/partials/_base.scss */
+  /* line 90, ../sass/partials/_base.scss */
   #more {
-    height: 100vh;
+    height: 120vh;
   }
 }
 
-/* line 94, ../sass/partials/_base.scss */
+/* line 100, ../sass/partials/_base.scss */
 .padding {
   padding-top: 3em;
   padding-right: 2em;
@@ -434,90 +439,94 @@ button:active, button:hover, button:focus {
   padding-right: 1em;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 94, ../sass/partials/_base.scss */
+  /* line 100, ../sass/partials/_base.scss */
   .padding {
-    padding-right: 7em;
-    padding-left: 7em;
+    padding-right: 8em;
+    padding-left: 6em;
     padding-top: 1em;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  /* line 104, ../sass/partials/_base.scss */
+  /* line 110, ../sass/partials/_base.scss */
   .container-animation {
     animation-name: wipe-enter;
     animation-duration: 1s;
     animation-iteration-count: 1;
   }
 }
-/* line 111, ../sass/partials/_base.scss */
+/* line 117, ../sass/partials/_base.scss */
 .container {
   background-color: white;
   border-radius: 1em;
   margin: 1em;
   padding: 1em;
 }
-/* line 117, ../sass/partials/_base.scss */
+/* line 123, ../sass/partials/_base.scss */
 .container button {
   margin: 1em;
   font-size: .5em;
 }
-/* line 122, ../sass/partials/_base.scss */
+/* line 128, ../sass/partials/_base.scss */
 .container h1 {
   text-align: center;
   font-size: 1em;
   font-weight: 400;
   margin-top: 0;
 }
-/* line 128, ../sass/partials/_base.scss */
+/* line 134, ../sass/partials/_base.scss */
 .container h1::after {
   content: "";
   display: block;
   width: 1.5em;
   height: .1em;
   background: #ab97e5;
-  margin-left: 45%;
+  margin-left: 46%;
   margin-top: .5em;
   border-radius: 1em;
 }
-/* line 142, ../sass/partials/_base.scss */
+/* line 148, ../sass/partials/_base.scss */
 .container img {
   height: 2em;
   margin: .5em;
 }
 
-/* line 148, ../sass/partials/_base.scss */
+/* line 154, ../sass/partials/_base.scss */
 .flex-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-shrink: 0;
   flex-wrap: wrap;
 }
 
-/* line 157, ../sass/partials/_base.scss */
+/* line 162, ../sass/partials/_base.scss */
 #skills {
   align-self: flex-end;
   margin-left: auto;
   margin-right: 0;
+  width: 70%;
 }
-/* line 163, ../sass/partials/_base.scss */
+/* line 169, ../sass/partials/_base.scss */
 #skills h1:after {
-  margin-left: 47%;
+  margin-left: 46%;
 }
 
-/* line 169, ../sass/partials/_base.scss */
+/* line 175, ../sass/partials/_base.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
+/* line 178, ../sass/partials/_base.scss */
+a:active, a:hover, a:focus {
+  color: #ab97e5;
+}
 
-/* line 174, ../sass/partials/_base.scss */
+/* line 183, ../sass/partials/_base.scss */
 #down {
   position: relative;
 }
 
-/* line 179, ../sass/partials/_base.scss */
+/* line 188, ../sass/partials/_base.scss */
 .title::before {
   content: "";
   width: 1em;
@@ -530,7 +539,7 @@ a {
   transform: rotate(90deg);
 }
 
-/* line 192, ../sass/partials/_base.scss */
+/* line 201, ../sass/partials/_base.scss */
 .container2 {
   margin: 2em;
   padding: 1em;
@@ -538,9 +547,18 @@ a {
   border: #f1f1f1 0.1em solid;
   border-radius: 1.2em;
 }
-/* line 199, ../sass/partials/_base.scss */
+/* line 208, ../sass/partials/_base.scss */
 .container2 h1 {
   font-size: 0.5em;
+}
+
+/* line 213, ../sass/partials/_base.scss */
+article:not(#hello):not(#more) {
+  font-size: 0.7em;
+}
+/* line 215, ../sass/partials/_base.scss */
+article:not(#hello):not(#more) p {
+  line-height: 1.8em;
 }
 
 /* line 1, ../sass/partials/_modules.scss */
