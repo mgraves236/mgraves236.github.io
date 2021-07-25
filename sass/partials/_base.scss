@@ -172,7 +172,7 @@ button a{
   }
 }
 
-a {
+a:not(#icons) {
   text-decoration: none;
   color: inherit;
   &:active, &:hover, &:focus {

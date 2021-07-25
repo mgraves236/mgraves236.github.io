@@ -39,18 +39,18 @@ address {
 
   * {
     @include mq {
-      margin-bottom: 1em;
+      margin-bottom: .7em;
       margin-right: 0;
     }
     cursor: pointer;;
     margin-right: 1em;
     color: $primary-color;
-    font-size: 1.5em;
+    font-size: 1.2em;
     transition: .5s;
     justify-self: flex-end;
 
     &:active, &:hover, &:focus {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 }
