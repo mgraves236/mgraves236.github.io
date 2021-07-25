@@ -132,7 +132,7 @@ address {
   color: $primary-color;
   text-decoration: none;
   &:active, &:hover, &:focus {
-    //color: $accent-color2;
+    color: $primary-color;
     &::after {
       content: "";
       display: block;
