@@ -512,12 +512,12 @@ button a:active, button a:hover, button a:focus {
 }
 
 /* line 175, ../sass/partials/_base.scss */
-a {
+a:not(#icons) {
   text-decoration: none;
   color: inherit;
 }
 /* line 178, ../sass/partials/_base.scss */
-a:active, a:hover, a:focus {
+a:not(#icons):active, a:not(#icons):hover, a:not(#icons):focus {
   color: #ab97e5;
 }
 
@@ -612,20 +612,20 @@ address {
   cursor: pointer;
   margin-right: 1em;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   transition: .5s;
   justify-self: flex-end;
 }
 @media only screen and (min-width: 1500px) {
   /* line 40, ../sass/partials/_modules.scss */
   #icons * {
-    margin-bottom: 1em;
+    margin-bottom: .7em;
     margin-right: 0;
   }
 }
 /* line 52, ../sass/partials/_modules.scss */
 #icons *:active, #icons *:hover, #icons *:focus {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* line 62, ../sass/partials/_modules.scss */
