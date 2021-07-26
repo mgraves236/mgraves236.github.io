@@ -8,12 +8,13 @@ html {
 
 body {
   font-family: $font-family;
-  font-size: 2em;
+  font-size: 3em;
   display: flex;
   flex-direction: column;
   @include mq {
     flex-direction: row;
     flex-wrap: wrap;
+    font-size: 2em;
   }
   overflow-x: hidden;
 }
@@ -94,7 +95,7 @@ button > a {
 #more {
   background-color: $secondary-color;
   width: 100vw;
-  height: 150vw;
+  height: auto;
   @include mq {
     height: 120vh;
   }
@@ -147,7 +148,6 @@ button > a {
       width: 1.5em;
       height: .1em;
       background: $accent-color;
-      //position: absolute;
       margin-left: 46%;
       margin-top: .5em;
       border-radius: 1em;
@@ -163,9 +163,16 @@ button > a {
 
 .flex-row {
   display: flex;
-  flex-direction: row;
+  @include mq {
+    flex-direction: row;
+  }
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
+
+  * {
+    margin-bottom: 1em;
+  }
 }
 
 
@@ -176,12 +183,15 @@ button > a {
     margin-right: 0;
   }
   width: 70%;
-
   h1 {
     &:after {
       margin-left: 46%;
     }
   }
+}
+
+#row-skills {
+  flex-direction: row;
 }
 
 a {
