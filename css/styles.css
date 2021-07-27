@@ -692,16 +692,17 @@ h3 + p, h3 + .text {
 /* line 323, ../sass/partials/_base.scss */
 .tile {
   position: relative;
+  margin: .2em;
 }
 
-/* line 327, ../sass/partials/_base.scss */
+/* line 328, ../sass/partials/_base.scss */
 .tile img {
   margin: 0;
   padding: 0;
   z-index: -1;
 }
 
-/* line 333, ../sass/partials/_base.scss */
+/* line 334, ../sass/partials/_base.scss */
 .overlay {
   margin: 0;
   padding: 0;
@@ -715,12 +716,12 @@ h3 + p, h3 + .text {
   background-color: #ab97e5;
 }
 
-/* line 346, ../sass/partials/_base.scss */
+/* line 347, ../sass/partials/_base.scss */
 .tile:hover .overlay {
   opacity: 1;
 }
 
-/* line 350, ../sass/partials/_base.scss */
+/* line 351, ../sass/partials/_base.scss */
 .text {
   color: white;
   font-size: .7em;
