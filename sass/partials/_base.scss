@@ -289,32 +289,32 @@ h3 {
 
 }
 
- h3 + p {
+h3 + p {
   display: inline;
   margin: 0;
   padding: 0;
 }
 
- .padding-inside {
-   padding: 1em;
- }
+.padding-inside {
+  padding: 1em;
+}
 
- .grid {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
-   img {
-     position: relative;
-     margin: .5em;
-     z-index: -1;
-     flex-grow: 0;
-     flex-shrink: 0;
-     max-width: 20em;
-   }
- }
+  img {
+    position: relative;
+    margin: .5em;
+    z-index: -1;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 20em;
+  }
+}
 
 .fa-arrow-left {
   color: #cbcbcb;

@@ -902,10 +902,5 @@ address {
 footer {
   margin: auto;
   text-align: center;
-}
-@media only screen and (min-width: 1500px) {
-  /* line 151, ../sass/partials/_modules.scss */
-  footer {
-    font-size: .5em;
-  }
+  font-size: .5em;
 }

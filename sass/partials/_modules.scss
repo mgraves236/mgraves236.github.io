@@ -148,10 +148,8 @@ address {
 //=====================================
 // FOOTER
 //====================================
- footer {
-   margin: auto;
-   text-align: center;
-   @include mq {
-     font-size: .5em;
-   }
- }
+footer {
+  margin: auto;
+  text-align: center;
+  font-size: .5em;
+}
