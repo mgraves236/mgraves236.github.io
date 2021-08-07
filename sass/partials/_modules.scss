@@ -6,7 +6,7 @@ header {
 address {
   background-color: $accent-color;
   text-align: right;
-  width: 90vw;
+  width: 100vw;
   margin-top: .5em;
   @include mq {
     margin: 0;
@@ -22,8 +22,8 @@ address {
 }
 
 #icons {
-  z-index: 1;
-  width: 100%;
+  z-index: 0;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -43,7 +43,7 @@ address {
       margin-right: 0;
     }
     cursor: pointer;
-    margin-right: 1em;
+    margin-right: .5em;
     color: $primary-color;
     font-size: 1em;
     transition: .5s;
@@ -105,7 +105,7 @@ address {
   align-self: center;
   margin-left: auto;
   margin-top: 1em;
-  font-size: 3em;
+  font-size: 2em;
   color: $primary-color;
   line-height: 1.5em;
   position: fixed;

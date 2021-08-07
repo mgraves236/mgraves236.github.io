@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: $font-family;
-  font-size: 3em;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   @include mq {
@@ -52,6 +52,7 @@ button {
     top: .7em;
     bottom: .7em;
   }
+  flex-grow: 0;
 
   &:active, &:hover, &:focus {
     background-color: $accent-color;
@@ -75,8 +76,14 @@ button > a {
   width: auto;
 
   h1 {
-    font-size: $head-size;
+    font-size: 2em;
     font-weight: 500;
+  }
+
+  @include mq {
+    h1 {
+      font-size: $head-size;
+    }
   }
 }
 
@@ -148,7 +155,10 @@ button > a {
       width: 1.5em;
       height: .1em;
       background: $accent-color;
-      margin-left: 46%;
+      @include mq {
+        margin-left: 46%;
+      }
+      margin-left: 39%;
       margin-top: .5em;
       border-radius: 1em;
     }
@@ -185,7 +195,9 @@ button > a {
   width: 70%;
   h1 {
     &:after {
-      margin-left: 46%;
+      @include mq {
+        margin-left: 46%;
+      }
     }
   }
 }
@@ -224,10 +236,9 @@ a {
 
 .container2 {
   text-align: left;
-  width: auto;
-  margin: 2em;
-  padding: 1em;
-  padding-top: 0;
+  width: 90%;
+  margin: 2em auto;
+  padding: 0 1em 1em;
   border: $secondary-color .1em solid;
   border-radius: 1.2em;
 
