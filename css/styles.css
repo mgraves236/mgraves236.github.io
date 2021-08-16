@@ -294,8 +294,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* line 8, ../sass/partials/_base.scss */
-s
+/* line 10, ../sass/partials/_base.scss */
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
@@ -304,8 +303,7 @@ body {
   overflow-x: hidden;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 8, ../sass/partials/_base.scss */
-  s
+  /* line 10, ../sass/partials/_base.scss */
   body {
     flex-direction: row;
     flex-wrap: wrap;
