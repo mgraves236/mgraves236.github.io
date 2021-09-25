@@ -374,13 +374,14 @@ button:active, button:hover, button:focus {
 /* line 68, ../sass/partials/_base.scss */
 button > a {
   color: black;
+  text-decoration: none;
 }
-/* line 71, ../sass/partials/_base.scss */
+/* line 72, ../sass/partials/_base.scss */
 button > a:active, button > a:hover, button > a:focus {
   color: black;
 }
 
-/* line 76, ../sass/partials/_base.scss */
+/* line 77, ../sass/partials/_base.scss */
 #hello {
   padding-top: 3em;
   padding-right: 1em;
@@ -389,7 +390,7 @@ button > a:active, button > a:hover, button > a:focus {
   width: auto;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 76, ../sass/partials/_base.scss */
+  /* line 77, ../sass/partials/_base.scss */
   #hello {
     padding-right: 8em;
     padding-left: 6em;
@@ -397,24 +398,24 @@ button > a:active, button > a:hover, button > a:focus {
   }
 }
 @media only screen and (min-width: 1500px) {
-  /* line 76, ../sass/partials/_base.scss */
+  /* line 77, ../sass/partials/_base.scss */
   #hello {
     height: 100vh;
   }
 }
-/* line 83, ../sass/partials/_base.scss */
+/* line 84, ../sass/partials/_base.scss */
 #hello h1 {
   font-size: 2em;
   font-weight: 500;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 89, ../sass/partials/_base.scss */
+  /* line 90, ../sass/partials/_base.scss */
   #hello h1 {
     font-size: 3em;
   }
 }
 
-/* line 95, ../sass/partials/_base.scss */
+/* line 96, ../sass/partials/_base.scss */
 #down {
   margin-top: 2em;
   justify-self: center;
@@ -424,13 +425,13 @@ button > a:active, button > a:hover, button > a:focus {
   z-index: -1;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 95, ../sass/partials/_base.scss */
+  /* line 96, ../sass/partials/_base.scss */
   #down {
     display: block;
   }
 }
 
-/* line 107, ../sass/partials/_base.scss */
+/* line 108, ../sass/partials/_base.scss */
 #more {
   background-color: #f1f1f1;
   width: 100vw;
@@ -438,13 +439,13 @@ button > a:active, button > a:hover, button > a:focus {
   padding: 0;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 107, ../sass/partials/_base.scss */
+  /* line 108, ../sass/partials/_base.scss */
   #more {
     height: 120vh;
   }
 }
 
-/* line 117, ../sass/partials/_base.scss */
+/* line 118, ../sass/partials/_base.scss */
 .padding {
   padding-top: 3em;
   padding-right: 1em;
@@ -457,7 +458,7 @@ button > a:active, button > a:hover, button > a:focus {
   padding-right: 1em;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 117, ../sass/partials/_base.scss */
+  /* line 118, ../sass/partials/_base.scss */
   .padding {
     padding-right: 8em;
     padding-left: 6em;
@@ -465,21 +466,21 @@ button > a:active, button > a:hover, button > a:focus {
   }
 }
 @media only screen and (min-width: 1500px) {
-  /* line 117, ../sass/partials/_base.scss */
+  /* line 118, ../sass/partials/_base.scss */
   .padding {
     justify-content: flex-start;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  /* line 130, ../sass/partials/_base.scss */
+  /* line 131, ../sass/partials/_base.scss */
   .container-animation {
     animation-name: wipe-enter;
     animation-duration: 1s;
     animation-iteration-count: 1;
   }
 }
-/* line 137, ../sass/partials/_base.scss */
+/* line 138, ../sass/partials/_base.scss */
 .container {
   background-color: white;
   border-radius: 1em;
@@ -488,24 +489,24 @@ button > a:active, button > a:hover, button > a:focus {
   flex-grow: 1;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 137, ../sass/partials/_base.scss */
+  /* line 138, ../sass/partials/_base.scss */
   .container {
     flex-grow: 0;
   }
 }
-/* line 146, ../sass/partials/_base.scss */
+/* line 147, ../sass/partials/_base.scss */
 .container button {
   margin: 1em;
   font-size: .5em;
 }
-/* line 151, ../sass/partials/_base.scss */
+/* line 152, ../sass/partials/_base.scss */
 .container h1 {
   text-align: center;
   font-size: 1em;
   font-weight: 400;
   margin-top: 0;
 }
-/* line 157, ../sass/partials/_base.scss */
+/* line 158, ../sass/partials/_base.scss */
 .container h1::after {
   content: "";
   display: block;
@@ -517,18 +518,18 @@ button > a:active, button > a:hover, button > a:focus {
   border-radius: 1em;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 157, ../sass/partials/_base.scss */
+  /* line 158, ../sass/partials/_base.scss */
   .container h1::after {
     margin-left: 46%;
   }
 }
-/* line 173, ../sass/partials/_base.scss */
+/* line 174, ../sass/partials/_base.scss */
 .container img {
   height: 2em;
   margin: .5em;
 }
 
-/* line 179, ../sass/partials/_base.scss */
+/* line 180, ../sass/partials/_base.scss */
 .flex-row {
   display: flex;
   flex-direction: column;
@@ -536,22 +537,22 @@ button > a:active, button > a:hover, button > a:focus {
   flex-wrap: wrap;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 179, ../sass/partials/_base.scss */
+  /* line 180, ../sass/partials/_base.scss */
   .flex-row {
     flex-direction: row;
   }
 }
-/* line 188, ../sass/partials/_base.scss */
+/* line 189, ../sass/partials/_base.scss */
 .flex-row * {
   margin-bottom: 1em;
 }
 
-/* line 194, ../sass/partials/_base.scss */
+/* line 195, ../sass/partials/_base.scss */
 #skills {
   width: 70%;
 }
 @media only screen and (min-width: 1500px) {
-  /* line 194, ../sass/partials/_base.scss */
+  /* line 195, ../sass/partials/_base.scss */
   #skills {
     align-self: flex-end;
     margin-left: auto;
@@ -559,37 +560,37 @@ button > a:active, button > a:hover, button > a:focus {
   }
 }
 @media only screen and (min-width: 1500px) {
-  /* line 202, ../sass/partials/_base.scss */
+  /* line 203, ../sass/partials/_base.scss */
   #skills h1:after {
     margin-left: 46%;
   }
 }
 
-/* line 210, ../sass/partials/_base.scss */
+/* line 211, ../sass/partials/_base.scss */
 #row-skills {
   flex-direction: row;
 }
 
-/* line 214, ../sass/partials/_base.scss */
+/* line 215, ../sass/partials/_base.scss */
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
 }
-/* line 218, ../sass/partials/_base.scss */
+/* line 219, ../sass/partials/_base.scss */
 a:active, a:hover, a:focus {
   color: #ab97e5;
 }
 
-/* line 223, ../sass/partials/_base.scss */
+/* line 224, ../sass/partials/_base.scss */
 #down {
   position: relative;
 }
 
-/* line 227, ../sass/partials/_base.scss */
+/* line 228, ../sass/partials/_base.scss */
 .title {
   text-align: left;
 }
-/* line 229, ../sass/partials/_base.scss */
+/* line 230, ../sass/partials/_base.scss */
 .title::before {
   content: "";
   width: 1em;
@@ -602,7 +603,7 @@ a:active, a:hover, a:focus {
   transform: rotate(90deg);
 }
 
-/* line 242, ../sass/partials/_base.scss */
+/* line 243, ../sass/partials/_base.scss */
 .container2 {
   text-align: left;
   width: 90%;
@@ -611,26 +612,26 @@ a:active, a:hover, a:focus {
   border: #f1f1f1 0.1em solid;
   border-radius: 1.2em;
 }
-/* line 250, ../sass/partials/_base.scss */
+/* line 251, ../sass/partials/_base.scss */
 .container2 h1 {
   font-size: 0.5em;
 }
 
-/* line 256, ../sass/partials/_base.scss */
+/* line 257, ../sass/partials/_base.scss */
 .container2 .grid img {
   height: 10em;
 }
 
-/* line 260, ../sass/partials/_base.scss */
+/* line 261, ../sass/partials/_base.scss */
 article:not(#hello):not(#more) {
   font-size: 0.7em;
 }
-/* line 263, ../sass/partials/_base.scss */
+/* line 264, ../sass/partials/_base.scss */
 article:not(#hello):not(#more) p, article:not(#hello):not(#more) .text {
   line-height: 1.8em;
 }
 
-/* line 268, ../sass/partials/_base.scss */
+/* line 269, ../sass/partials/_base.scss */
 #details {
   display: flex;
   flex-direction: row;
@@ -638,25 +639,25 @@ article:not(#hello):not(#more) p, article:not(#hello):not(#more) .text {
   justify-content: space-around;
 }
 
-/* line 275, ../sass/partials/_base.scss */
+/* line 276, ../sass/partials/_base.scss */
 .col {
   text-align: left;
   flex-grow: 0;
   flex-basis: 30%;
 }
-/* line 279, ../sass/partials/_base.scss */
+/* line 280, ../sass/partials/_base.scss */
 .col h1 {
   font-size: 1em;
 }
 
-/* line 284, ../sass/partials/_base.scss */
+/* line 285, ../sass/partials/_base.scss */
 .fa-google {
   color: #d5d5d5;
   display: inline-block;
   margin-right: .7em;
 }
 
-/* line 290, ../sass/partials/_base.scss */
+/* line 291, ../sass/partials/_base.scss */
 .category, h3 {
   font-weight: 400;
   color: #d5d5d5;
@@ -665,7 +666,7 @@ article:not(#hello):not(#more) p, article:not(#hello):not(#more) .text {
   margin-block-end: 3em;
 }
 
-/* line 298, ../sass/partials/_base.scss */
+/* line 299, ../sass/partials/_base.scss */
 h3 {
   font-weight: 500;
   color: black;
@@ -674,19 +675,19 @@ h3 {
   margin-right: 2em;
 }
 
-/* line 308, ../sass/partials/_base.scss */
+/* line 309, ../sass/partials/_base.scss */
 h3 + p, h3 + .text {
   display: inline;
   margin: 0;
   padding: 0;
 }
 
-/* line 314, ../sass/partials/_base.scss */
+/* line 315, ../sass/partials/_base.scss */
 .padding-inside {
   padding: 1em;
 }
 
-/* line 318, ../sass/partials/_base.scss */
+/* line 319, ../sass/partials/_base.scss */
 .grid {
   display: flex;
   flex-direction: row;
@@ -694,7 +695,7 @@ h3 + p, h3 + .text {
   justify-content: center;
   align-items: center;
 }
-/* line 325, ../sass/partials/_base.scss */
+/* line 326, ../sass/partials/_base.scss */
 .grid img {
   position: relative;
   margin: .5em;
@@ -704,25 +705,25 @@ h3 + p, h3 + .text {
   max-width: 20em;
 }
 
-/* line 335, ../sass/partials/_base.scss */
+/* line 336, ../sass/partials/_base.scss */
 .fa-arrow-left {
   color: #cbcbcb;
 }
 
-/* line 339, ../sass/partials/_base.scss */
+/* line 340, ../sass/partials/_base.scss */
 .tile {
   position: relative;
   margin: .2em;
 }
 
-/* line 344, ../sass/partials/_base.scss */
+/* line 345, ../sass/partials/_base.scss */
 .tile img {
   margin: 0;
   padding: 0;
   z-index: -1;
 }
 
-/* line 350, ../sass/partials/_base.scss */
+/* line 351, ../sass/partials/_base.scss */
 .overlay {
   margin: 0;
   padding: 0;
@@ -736,12 +737,12 @@ h3 + p, h3 + .text {
   background-color: #ab97e5;
 }
 
-/* line 363, ../sass/partials/_base.scss */
+/* line 364, ../sass/partials/_base.scss */
 .tile:hover .overlay {
   opacity: 1;
 }
 
-/* line 367, ../sass/partials/_base.scss */
+/* line 368, ../sass/partials/_base.scss */
 .text {
   color: white;
   font-size: .7em;
@@ -753,6 +754,19 @@ h3 + p, h3 + .text {
   transform: translate(-50%, -50%);
   text-align: start;
   text-transform: uppercase;
+}
+
+/* line 382, ../sass/partials/_base.scss */
+.center {
+  width: 100%;
+}
+
+/* line 386, ../sass/partials/_base.scss */
+.center * {
+  display: block;
+  margin: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 /* line 1, ../sass/partials/_modules.scss */
