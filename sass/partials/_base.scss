@@ -377,3 +377,14 @@ h3 + p {
   text-align: start;
   text-transform: uppercase;
 }
+
+.center{
+  width: 100%;
+}
+
+.center *{
+  display: block;
+  margin: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
